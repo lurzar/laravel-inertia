@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LandingController;
 use App\Http\Controllers\NotesController;
 
 /*
@@ -14,7 +15,5 @@ use App\Http\Controllers\NotesController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [LandingController::class, 'index']);
 Route::get('/note', [NotesController::class, 'index']);
