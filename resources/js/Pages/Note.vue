@@ -32,7 +32,7 @@ const addNote = () => {
 </script>
 
 <template>
-    <Head title="Home" />
+    <Head title="Note" />
     <main>
         <div v-if="showModal" class="overlay">
         <div class="modal">
