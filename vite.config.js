@@ -9,7 +9,6 @@ export default defineConfig({
             refresh: true,
         }),
         vue({
-            input: ['resources/css/app.css', 'resources/js/app.js'],
             refresh: true,
         }),
     ],
